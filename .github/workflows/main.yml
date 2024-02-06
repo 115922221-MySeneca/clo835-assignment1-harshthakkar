@@ -29,7 +29,6 @@ jobs:
         ECR_REPOSITORY: harshclo835-repository-mysql
         IMAGE_TAG: v1.0
       run: |
-        
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTR/$ECR_REPOSITORY:$IMAGE_TAG -f Dockerfile_mysql .
